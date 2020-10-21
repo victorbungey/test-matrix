@@ -132,18 +132,14 @@
               if((name !="") && (email !="") && (Phone !="") && (Comment !="")) {
                 console.log(name, email, Phone, Comment)
                 Email.send({
-                    SecureToken:"915e3d3c-b26c-48c3-8cd6-a038c0f1d1a9 ",
-                    To : "vicbungey@gmail.com",
-                    From : email,
-                    Subject : "Website Mail from " + name + ": Phone Number " + Phone,
-                    Body : Comment
-                }).then(
-                  message => alert("Thank you for your feedback!"),
-                  document.getElementsByName("Name")[0].value="",
-                  document.getElementsByName("Email")[0].value="",
-                  document.getElementsByName("Phone")[0].value="",
-                  document.getElementsByName("Message")[0].value=""
-                );
+    SecureToken : "a8a8d2e0-04e7-4350-be38-5a698e951a42",
+    To : 'them@website.com',
+    From : "vicbungey@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
               }
               }
               </script>
