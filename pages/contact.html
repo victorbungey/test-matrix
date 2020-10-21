@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Matrix Systems | Contact Us</title>
+
+
+  <!--  Styles  -->
+
+  <!-- Navigation Bar -->
+  <link href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../css/home.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Footer -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/footer.css"/>
+
+  <!--Contact  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles/contact.css">
+
+</head>
+<body>
+
+    <!--End of feedback-->
+    <!-- <script src="../js/main.js"></script> -->
+
+    <!-- Start of Navbar -->
+    <script src="../js/home.js"></script>
+    <div class="menu-container">
+      <div class="menu" style="font-size: 14px;">
+          <a href="../index.html" class="logo"><img src="../images/matrixlogo.png" alt="Matrix logo"></a>
+          <ul class="clearfix">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">About</a>
+              <ul>
+                <li><a href="index.html#aboutus">About Us</a></li>
+                <li><a href="index.html#partners">Our Partners & Clients</a></li>
+                <!-- <li><a href="#">Our Clients</a></li> -->
+              </ul>
+            </li>
+            <li><a href="#">Products & Services</a>
+              <ul>
+                <li><a href="software.html">Software & Applications</a>
+                  <ul>
+                    <li><a href="software.html">Customer Relations Management</a></li>
+                    <li><a href="software.html">Helpdesk & Complaint Management</a></li>
+                    <li><a href="software.html">Event & Membership Management</a></li>
+                    <li><a href="software.html">Legal Management Software</a></li>
+                    <li><a href="software.html">Knowledge Management</a></li>
+                    <li><a href="software.html">Audit Management</a></li>
+                  </ul>
+                </li>
+
+
+                <li><a href="entreprise.html">Enterprise Solutions</a>
+                  <ul>
+                    <li><a href="entreprise.html">Computer-Aided Facility & Asset Management</a></li>
+                    <li><a href="entreprise.html">Automated Visitor Management System</a></li>
+                    <li><a href="entreprise.html">Meeting Room Management Systems</a></li>
+                    <li><a href="entreprise.html">Enterprise IT Helpdesk System</a></li>
+                    <li><a href="entreprise.html">Enterprise Facilities & Asset Management</a></li>
+                  </ul>
+                </li>
+
+                <li><a href="security.html">Advanced Security</a>
+                  <ul>
+                    <li><a href="security.html">AI Powered Video Surveillance Systems</a></li>
+                    <li><a href="security.html">Time & Attendance Management Systems</a></li>
+                    <li><a href="security.html">Smart Key Management Systems</a></li>
+                    <li><a href="security.html">Access Control Systems</a></li>
+                    <li><a href="security.html">Fire, Burglar & Emergenct Alarm Systems</a></li>
+                    <li><a href="security.html">High Security Gates & Entrance Systems</a></li>
+                  </ul>
+                </li>
+
+                <li><a href="ict.html">ICT & Telecommunications</a>
+                  <ul>
+                    <li><a href="ict.html">Data Centre, Server Farms & Server Room Solutions</a></li>
+                    <li><a href="ict.html">Unified Communication</a></li>
+                    <li><a href="ict.html">IP & Hybrid PABX, & VOIP Solutions</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li><a href="#">Links & Downloads</a>
+              <ul>
+                <li><a target="_blank" href="../files/Matrix Company Profile2.pdf">Company Profile</a></li>
+                <li><a target="_blank" href="https://www.google.com/maps/place/Matrix+Vision+Systems+Limited/@-1.272634,36.8021614,17z/data=!3m1!4b1!4m5!3m4!1s0x182f17a8343ddef3:0xeb0730173fe563ff!8m2!3d-1.272634!4d36.8043501">Sitemap</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+</div>
+    <!-- End of  navigation bar -->
+
+
+<!-- Line to separate the navigation bar and carousel -->
+<div id="line"><hr  style="" /></div>
+<!-- Endof -->
+
+
+
+<div class="container">
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="contact.js"></script>
+
+
+            <script>
+              function sendMail(str) {
+                  var link = "mailto:info@matrixsystems.co.ke";
+                  location.href = link;
+              }
+
+              function submit_comment() {
+              var name = document.getElementsByName("Name")[0].value;
+              var email = document.getElementsByName("Email")[0].value;
+              var Phone = document.getElementsByName("Phone")[0].value;
+              var Comment = document.getElementsByName("Message")[0].value;
+
+//c2b79193-c0dc-41f4-876a-59af7b0d123f
+
+              if((name !="") && (email !="") && (Phone !="") && (Comment !="")) {
+                console.log(name, email, Phone, Comment)
+                Email.send({
+                    SecureToken:"2e65f206-c082-44a5-95b0-4450f6138132f1deddf8-5f15-45d3-a9e8-24a16e3ca0e4",
+                    To : "info@matrixsystems.co.ke",
+                    From : email,
+                    Subject : "Website Mail from " + name + ": Phone Number " + Phone,
+                    Body : Comment
+                }).then(
+                  message => alert("Thank you for your feedback!"),
+                  document.getElementsByName("Name")[0].value="",
+                  document.getElementsByName("Email")[0].value="",
+                  document.getElementsByName("Phone")[0].value="",
+                  document.getElementsByName("Message")[0].value=""
+                );
+              }
+              }
+              </script>
+
+
+
+	<div class="row">
+			<h1>contact us</h1>
+	</div>
+	<div class="row">
+			<h4 style="text-align:center">We'd love to hear from you!</h4>
+	</div>
+	<div class="row input-container">
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" name="Name" required />
+					<label>Name</label>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input type="text" name="Email" required/>
+					<label>Email</label>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style="float:right;">
+					<input type="text" name="Phone" required />
+					<label>Phone Number</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea name="Message" required></textarea>
+					<label>Message</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="btn-lrg submit-btn" onclick=submit_comment()>Send Message</div>
+			</div>
+	</div>
+</div>
+
+
+<!-- Footer -->
+<footer class="flex-col" style="margin-top:10%;font-size: 14px;">
+  <div id="footerline"><hr  style="" /></div>
+    <div class="info-wrapper flex-row center bg-dark">
+        <div class="wrapper">
+            <div class="footer-info flex-row space-between-start ">
+                <div class="info-container flex-row center">
+                    <ul>
+                        <li>
+                            <h4> Important Links </h4>
+                        </li>
+
+
+                        <li>
+                            <a href="../index.html#featured-products"> Featured</a>
+                        </li>
+
+                        <li><a href="../index.html#partners"> Partners</a> </li>
+
+                        <li>
+                            <a href="../files/Matrix Company Profile2.pdf">Company Profile </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-container  flex-row center">
+                    <ul>
+                        <li>
+                            <h4>Find Us</h4>
+                        </li>
+
+                        <li><a href="index.html#aboutus"> Maisonette 7, UBS Village </a> </li>
+                        <li><a href="index.html#aboutus"> Muguga Green, Westlands </a> </li>
+                        <li><a href="index.html#aboutus"> P.O Box 6030-00200, </a> </li>
+                        <li><a href="index.html#aboutus"> Nairobi, Kenya </a> </li>
+
+
+                       <!-- <li><a href="#"> Our Clients</a> </li> -->
+
+                    </ul>
+                </div>
+                <div class="info-container  flex-row center">
+                    <ul>
+                        <li>
+                            <h4> Contact </h4>
+                        </li>
+
+                        <li> <a href="#"><a href="mailto:info@matrixsystems.co.ke?subject=feedback">Email Us</a></li>
+                        <li> <a href="tel:254-721-779429"> (254) 721 779429</a></li>
+                        <li><a href="https://www.google.com/maps/place/Matrix+Vision+Systems+Limited/@-1.272634,36.8021614,17z/data=!3m1!4b1!4m5!3m4!1s0x182f17a8343ddef3:0xeb0730173fe563ff!8m2!3d-1.272634!4d36.8043501"> Google Maps</a> </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social-links-container bg-light">
+        <div class="wrapper flex-col center">
+            <div class="social-links flex-row">
+                <div class="social-link">
+                    <a href="facebook.com"> <i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="social-link">
+                    <a href="twitter.com"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="social-link">
+                    <a href="youtube.com"><i class="fab fa-youtube"></i></a>
+                </div>
+
+            </div>
+            <div class="copyright-container">
+                <p> Copyright &copy; 2020. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End of Footer -->
+
+</body>
+</html>
