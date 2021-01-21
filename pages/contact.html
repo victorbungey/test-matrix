@@ -112,12 +112,10 @@
 
 <div class="container">
   <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script src="contact.js"></script>
 
-
-            <script>
+            <script type="text/javascript">
               function sendMail(str) {
-                  var link = "mailto:bungei.victor@matrixsystems.co.ke";
+                  var link = "mailto:info@matrixsystems.co.ke";
                   location.href = link;
               }
 
@@ -127,19 +125,21 @@
               var Phone = document.getElementsByName("Phone")[0].value;
               var Comment = document.getElementsByName("Message")[0].value;
 
-//c2b79193-c0dc-41f4-876a-59af7b0d123f
-
               if((name !="") && (email !="") && (Phone !="") && (Comment !="")) {
                 console.log(name, email, Phone, Comment)
                 Email.send({
-    			SecureToken : "fdfea36c-9776-43ee-a246-77453ca31de8",
-    			To : 'bungei.victor@matrixsystems.co.ke',
-   			From : "vicbungey@gmail.com",
-    			Subject : "This is the subject",
-    			Body : "And this is the body"
-		}).then(
-  			message => alert('Your form has been sent successfully')
-		);
+                    SecureToken:"fdfea36c-9776-43ee-a246-77453ca31de8",
+                    To : "bungei.victor@matrixsystems.co.ke",
+                    From : "vicbungey@gmail.com",
+                    Subject : "Website Mail from " + name + ": Phone Number " + Phone,
+                    Body : Comment
+                }).then(
+                  message => alert("message sent!"),
+                  document.getElementsByName("Name")[0].value="",
+                  document.getElementsByName("Email")[0].value="",
+                  document.getElementsByName("Phone")[0].value="",
+                  document.getElementsByName("Message")[0].value=""
+                );
               }
               }
               </script>
@@ -213,11 +213,9 @@
                         <li>
                             <h4>Find Us</h4>
                         </li>
-
-                        <li><a href="index.html#aboutus"> Maisonette 7, UBS Village </a> </li>
-                        <li><a href="index.html#aboutus"> Muguga Green, Westlands </a> </li>
-                        <li><a href="index.html#aboutus"> P.O Box 6030-00200, </a> </li>
-                        <li><a href="index.html#aboutus"> Nairobi, Kenya </a> </li>
+                        <li><a href=""> Opposite 14th Riverside Drive</a> </li>
+                        <li><a href=""> P.O Box 6030-00200, </a> </li>
+                        <li><a href=""> Nairobi, Kenya </a> </li>
 
 
                        <!-- <li><a href="#"> Our Clients</a> </li> -->
@@ -230,7 +228,7 @@
                             <h4> Contact </h4>
                         </li>
 
-                        <li> <a href="#"><a href="mailto:vicbungey@gmail.com?subject=feedback">Email Us</a></li>
+                        <li> <a href="#"><a href="mailto:info@matrixsystems.co.ke?subject=feedback">Email Us</a></li>
                         <li> <a href="tel:254-721-779429"> (254) 721 779429</a></li>
                         <li><a href="https://www.google.com/maps/place/Matrix+Vision+Systems+Limited/@-1.272634,36.8021614,17z/data=!3m1!4b1!4m5!3m4!1s0x182f17a8343ddef3:0xeb0730173fe563ff!8m2!3d-1.272634!4d36.8043501"> Google Maps</a> </li>
 
