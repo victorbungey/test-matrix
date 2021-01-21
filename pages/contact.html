@@ -132,13 +132,13 @@
               if((name !="") && (email !="") && (Phone !="") && (Comment !="")) {
                 console.log(name, email, Phone, Comment)
                 Email.send({
-    SecureToken : ' ff10692c-5ef5-4121-8508-530619d63943',
-    To : 'vicbungey@gmail.com',
-    From : email,
+    SecureToken : ' e522c027-ddee-4e26-b42b-6e994a2b934e',
+    To : 'bungei.victor@matrixsystems.co.ke',
+    From : 'you@isp.com',
     Subject : "This is the subject",
     Body : "And this is the body"
 }).then(
-  message => alert(message)
+  message => alert('Your form has been sent successfully')
 );
               }
               }
