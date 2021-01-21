@@ -211,7 +211,16 @@
 			</div>
 	</div>
 </div>
+	
+<?php
+$to = "info@matrixsystems.co.ke";
+$subject = "My subject";
+$txt = "Hello world!";
+$headers = "From: eamocha@gmail.com" . "\r\n" .
+"CC: somebodyelse@example.com";
 
+mail($to,$subject,$txt,$headers);
+?>
 
 <!-- Footer -->
 <footer class="flex-col" style="margin-top:10%;font-size: 14px;">
