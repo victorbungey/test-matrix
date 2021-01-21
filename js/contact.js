@@ -1,5 +1,5 @@
 function sendMail(str) {
-    var link = "mailto:vicbungey@gmail.com" + "&subject=" + escape("This is my subject") + "&body=" + escape(str);
+    var link = "mailto:bungei.victor@matrixsystems.co.ke" + "&subject=" + escape("This is my subject") + "&body=" + escape(str);
     location.href = link;
 }
 function contact_us() {
