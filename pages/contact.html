@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src = "https://smtpjs.com/v3/smtp.js"></script>
-    <script src="index.js"></script>
+    <script type="text/javascript">
+        function sendEmail(){
+            sendEmail.send({
+            SecureToken: "fdfea36c-9776-43ee-a246-77453ca31de8",
+            To: 'bungei.victor@matrixsystems.co.ke',
+            From: "vicbungey@gmail.com",
+            subject:'Email subject',
+            Body: "email body"
+    })
+    .then(message=>alert("mail sent successfully"))
+}    
+    </script>
 </head>
 <body>
     //fdfea36c-9776-43ee-a246-77453ca31de8
